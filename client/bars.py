@@ -16,6 +16,9 @@ def get_bars(
         start_ts = parse_ts(start) if start else None
         end_ts = parse_ts(end) if end else None
 
+        if start_ts and end_ts and (start_ts > end_ts):
+            raise Exception("Start time is larger than end time. Invalid input!")
+
         results = []
 
         with open(path) as f:
