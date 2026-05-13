@@ -40,5 +40,5 @@ def get_bars(
 
         return results
     except Exception as e:
-        print("Exception: {}".format(e))
+        print("Exception with getting bars: {}".format(e))
         return []
