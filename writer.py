@@ -6,11 +6,6 @@ def round6(x):
 def write_output(path, bars):
     items = sorted(bars.items())
 
-    try:
-        open(path, "x")
-    except:
-        pass
-
     with open(path, "w") as f:
         for (instrument, bucket), bar in items:
 
