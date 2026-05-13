@@ -1,7 +1,7 @@
 import pandas as pd 
-from row_validator import check_valid_and_depulicate
-from writer import write_output
-from aggregator import aggregate
+from processors.row_validator import check_valid_and_depulicate
+from processors.writer import write_output
+from processors.aggregator import aggregate
 
 INPUT = "./data/public_input.csv"
 OUTPUT = "./data/output/output.ndjson"

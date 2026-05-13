@@ -1,8 +1,8 @@
 from datetime import datetime
-from row_object import RowObj
+from processors.row_object import RowObj
 from pandas import DataFrame
 
-def parse_timestamp(date: str) -> datetime:
+def parse_timestamp(date: str):
     return datetime.strptime(date, "%Y-%m-%dT%H:%M:%SZ")
 
 def check_valid_and_depulicate(rows: DataFrame) -> list[RowObj]:

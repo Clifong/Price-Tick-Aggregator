@@ -1,4 +1,3 @@
 1. Why pandas instead of csv?
 - Pandas is more optimal for large data sets. csv is better only for small data sets
 - Using pandas method allows us to handle more validation and deduplication in one go, preventing repeated iterations
-

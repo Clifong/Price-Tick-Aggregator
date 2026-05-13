@@ -1,5 +1,5 @@
 from collections import defaultdict
-from row_object import RowObj
+from processors.row_object import RowObj
 
 def minute_bucket(timestamp: str):
     return timestamp.replace(second=0)

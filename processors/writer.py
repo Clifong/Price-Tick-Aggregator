@@ -1,9 +1,9 @@
 import json
 
-def round6(x):
+def round6(x: float):
     return round(x, 6)
 
-def write_output(path, bars):
+def write_output(path: str, bars: dict):
     items = sorted(bars.items())
 
     with open(path, "w") as f:
